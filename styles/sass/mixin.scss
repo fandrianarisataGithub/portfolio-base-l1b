@@ -1,0 +1,11 @@
+@mixin fontStyle($fs, $lh, $fw, $color, $isUppercase) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+    color: $color;
+    @if $isUppercase {
+        text-transform: uppercase;
+    }@else {
+        text-transform: lowercase;
+    }
+}
