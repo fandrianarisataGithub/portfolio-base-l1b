@@ -1,0 +1,25 @@
+.bloc-standard {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @include respond-to("tablety-be") {
+            flex-direction: column;
+        }
+        li {
+            &:last-child {
+               @include respond-to("xlarge") {
+                    margin: 50px auto;
+               }
+               @include respond-to("large") {
+                margin: 50px 0;
+                }
+                @include respond-to("tablety-be") {
+                    margin: 50px 0;
+                }
+            }
+        }
+    }
+}
